@@ -1,13 +1,12 @@
-package pt.isel.ls.html;
+package html;
 
+import common.Writable;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import pt.isel.ls.common.Writable;
 
 public class HtmlElem implements Writable {
 

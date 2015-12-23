@@ -1,9 +1,9 @@
-package pt.isel.ls.html;
+package html;
 
-import pt.isel.ls.common.Writable;
+import common.Writable;
 
-public class HtmlPage extends Html{
-    
+public class HtmlPage extends Html {
+
     public HtmlPage(String title, Writable... c) {
         super(
                 new HtmlElem("html",

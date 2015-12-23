@@ -1,4 +1,4 @@
-package pt.isel.ls.http;
+package http;
 
 public enum HttpStatusCode {
     Ok(200),

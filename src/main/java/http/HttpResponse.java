@@ -1,15 +1,10 @@
-package pt.isel.ls.http;
+package http;
 
-import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.servlet.http.HttpServletResponse;
 
 public class HttpResponse {
 

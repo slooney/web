@@ -1,11 +1,9 @@
-package pt.isel.ls.html;
-
-import java.io.IOException;
-import java.io.Writer;
+package html;
 
 import org.apache.commons.lang.StringEscapeUtils;
-
-import pt.isel.ls.common.Writable;
+import common.Writable;
+import java.io.IOException;
+import java.io.Writer;
 
 public class HtmlText implements Writable {
 

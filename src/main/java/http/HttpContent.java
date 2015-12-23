@@ -1,4 +1,4 @@
-package pt.isel.ls.http;
+package http;
 
 import pt.isel.ls.common.Writable;
 
