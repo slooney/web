@@ -13,7 +13,8 @@ public class Element {
     public String getCode() {return code;}
     public void setCode(String code) {this.code = code;}
 
-    public Element(String name, boolean gender){
+    public Element(String code, String name, boolean gender){
+        this.code = code;
         this.name = name;
         this.gender = gender;
     }

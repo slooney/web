@@ -24,7 +24,7 @@ public class HtmlElem implements Writable {
         _attrs.put(name, value);
         return this;
     }
-    
+
     private final List<Writable> _content = new ArrayList<Writable>();
     public final HtmlElem withContent(Writable w) {
         _content.add(w);

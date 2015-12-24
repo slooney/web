@@ -1,14 +1,12 @@
+import element.Element;
 import element.ElementRepository;
 import element.InMemoryElementRepository;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
-import element.ElementRepository;
-import element.Element;
-import element.InMemoryElementRepository;
 
 public class App {
 
-    private static final int _LISTEN_PORT = 8080;
+    private static final int LISTEN_PORT = 8080;
 
     private static final ElementRepository _repo = new InMemoryElementRepository();
     public static ElementRepository getRepository(){
@@ -17,7 +15,9 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        Server server = new Server(_LISTEN_PORT);
+        _repo.add(new Element("slooney", "Ricardo", true));
+
+        Server server = new Server(LISTEN_PORT);
         ServletHandler handler = new ServletHandler();
         server.setHandler(handler);
         handler.addServletWithMapping(AppServlet.class, "/*");
