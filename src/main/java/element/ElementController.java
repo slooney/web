@@ -10,76 +10,55 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 import java.sql.SQLException;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Scanner;
 
 public class ElementController {
 
-    public HttpResponse handleGetElementByCode(HttpServletRequest req, String code) throws Exception{
-        Element e = repo.getByCode(code);
-        if(e == null) return new HttpResponse(HttpStatusCode.NotFound);
-        //return new HttpResponse(HttpStatusCode.Ok, new ElemViewIndex(e));
-        requestHandle();
-        return new HttpResponse(HttpStatusCode.Ok, resp, new ElemViewIndex(e));
-    }
+//    public HttpResponse handleGetElementByCode(HttpServletRequest req, String code) throws Exception{
+//        Element e = repo.getByCode(code);
+//        if(e == null) return new HttpResponse(HttpStatusCode.NotFound);
+//        //return new HttpResponse(HttpStatusCode.Ok, new ElemViewIndex(e));
+//        requestHandle(req, resp, e);
+//        return new HttpResponse(HttpStatusCode.Ok, resp, new ElemViewIndex(e));
+//    }
 
-    public void requestHandle(HttpServletRequest req, HttpServletResponse resp) throws IOException, URISyntaxException {
+    public void requestHandle(HttpServletRequest req, HttpServletResponse resp, Element e) throws IOException, URISyntaxException {
         URI reqUri = new URI(req.getRequestURI());
         String method = req.getMethod();
 
-        try {
-            TemplateValidator.checkPath(reqUri.getPath());
-            String path = reqUri.getPath();
-            String h = req.getHeader("accept").split(",")[0];
-            String headers = (h.equals("*/*"))? null : String.format("accept:%s", h);
-            String parameters = getParameters(req);
+        String path = reqUri.getPath();
+        String h = req.getHeader("accept").split(",")[0];
+        String headers = (h.equals("*/*"))? null : String.format("accept:%s", h);
+        String parameters = getParameters(req);
 
-            Request r = new Request();
-            r.setMethod(method);
-            r.setPath(path);
-            r.setParameters(parameters);
-            r.setHeaders(headers);
-            r.setServer(server);
-            String output = r.execute(cM);
+        String output = String.format(ElemViewIndex.output, e.getCode());
 
-            switch(method){
-                case "GET":
-                    writeResponse(resp, r.getHeaders().getString("accept"), output, OK);
-                    break;
-                case "POST":
-                    writePostResponse(resp, path, output, SEE_OTHER);
-                    break;
-            }
+        writeResponse(resp, headers, output, HttpStatusCode.Ok.valueOf());
+    }
 
+    private String getParameters(HttpServletRequest req){
+        Map<String,String[]> map = req.getParameterMap();
 
+        if(map.size()==0)
+            return null;
+
+        StringBuffer sb = new StringBuffer();
+
+        Iterator<Map.Entry<String,String[]>> it = map.entrySet().iterator();
+
+        for(Map.Entry<String,String[]> e; it.hasNext(); ){
+            e = it.next();
+            sb.append(e.getKey());
+            sb.append("=");
+            sb.append(e.getValue()[0].replace(' ', '+'));
+            sb.append("&");
         }
-        catch(CommandNotFoundException | InvalidParameterException | GetErrorException | InvalidTemplateException e){
-            String errorMsg = formatExceptionMsg(e.getMessage());
-            writeResponse(resp, "text/html", errorMsg, BAD_REQUEST);
-        }
-        catch (SQLException e){
-            boolean connError = false;
-            Scanner sc = new Scanner(e.getMessage());
 
-            while(sc.hasNext() && !connError)
-                if(sc.next().startsWith("connection"))
-                    connError = true;
-
-            if (connError){
-                String errorMsg = formatExceptionMsg("Service Unavailable");
-                writeResponse(resp, "text/html", errorMsg, SERVICE_UNAVAILABLE);
-            }
-            else{
-                String errorMsg = formatExceptionMsg("Internal Server Error");
-                writeResponse(resp, "text/html", errorMsg, INTERNAL_SERVER_ERROR);
-            }
-        }
-        catch (UnsupportedMediaTypeException e){
-            String errorMsg = formatExceptionMsg(e.getMessage());
-            writeResponse(resp, "text/html", errorMsg, UNSUPPORTED_MEDIA_TYPE);
-        }
-        catch (Exception e) {
-            resp.setStatus(INTERNAL_SERVER_ERROR);
-        }
+        String p = sb.toString();
+        int endIdx = p.length()-1;
+        return p.substring(0,endIdx);
     }
 
     private void writeResponse(HttpServletResponse resp, String outFormat, String output, int statusCode) throws IOException{

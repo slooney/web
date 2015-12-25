@@ -53,7 +53,7 @@ public class AppServlet extends HttpServlet{
             String code = segs[1];
             if(segs[1].contains("="))
                 code = segs[1].substring(segs[1].indexOf("=") + 1);
-            new ElementController().requestHandle(req, resp);
+            new ElementController().requestHandle(req, resp, repo.getByCode(code));
         }
         new HttpResponse(HttpStatusCode.NotFound);
     }

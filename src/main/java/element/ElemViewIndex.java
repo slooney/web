@@ -2,11 +2,11 @@ package element;
 
 public class ElemViewIndex{
 
-    public ElemViewIndex(Element e){
-        String.format(output, e.getCode());
+    public String toString(){
+        return output;
     }
 
-    private static final String output = formatOutput();
+    public static final String output = formatOutput();
 
     private static String formatOutput (){
         StringBuffer sb = new StringBuffer("<!DOCTYPE html>");
