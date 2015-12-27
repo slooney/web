@@ -24,17 +24,17 @@ public class ElemViewIndex{
                 "    <title>Surpresa!</title>\n" +
                 "\n" +
                 "    <!-- Bootstrap core CSS -->\n" +
-                "    <link href=\"./dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                "    <link href=\"./assets/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- Custom styles for this template -->\n" +
-                "    <link href=\"https://www.dropbox.com/s/35ygvd7v6cn0m7m/cover.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/cover.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->\n" +
-                "    <!--[if lt IE 9]><script src=\"../../assets/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
-                "    <script src=\"./assets/js/ie-emulation-modes-warning.js\"></script>\n" +
+                "    <!--[if lt IE 9]><script src=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
+                "    <script src=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/js/ie-emulation-modes-warning.js\"></script>\n" +
                 "\n" +
                 "    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n" +
                 "    <!--[if lt IE 9]>\n" +
@@ -88,7 +88,7 @@ public class ElemViewIndex{
                 "    </div>\n" +
                 "\n" +
                 "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                "    <script src=\"./assets/js/ie10-viewport-bug-workaround.js\"></script>\n" +
+                "    <script src=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/js/ie10-viewport-bug-workaround.js\"></script>\n" +
                 "  </body>\n" +
                 "</html>\n";
     }
