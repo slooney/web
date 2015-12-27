@@ -16,9 +16,9 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         _repo.add(new Element("slooney", "Ricardo", true));
-//        Server server = new Server(Integer.valueOf(System.getenv("PORT")));
 
-        Server server = new Server(LISTEN_PORT);
+        Server server = new Server(Integer.valueOf(System.getenv("PORT")));
+        //Server server = new Server(LISTEN_PORT);
         ServletHandler handler = new ServletHandler();
         server.setHandler(handler);
         handler.addServletWithMapping(AppServlet.class, "/*");

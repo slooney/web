@@ -1,1 +1,1 @@
-web: ./build/install/1516-1-common/bin/1516-1-common
+web: java $JAVA_OPTS -cp ./build/classes/main App
