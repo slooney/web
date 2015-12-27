@@ -1,1 +1,1 @@
-web: ./build/install/first/bin/first
+web: java $JAVA_OPTS -cp build/classes/main:vendor/main/commons-lang-2.6.jar:vendor/main/guava-18.0.jar:vendor/main/javax.servlet-3.0.0.v201112011016.jar:vendor/main/jetty-all-9.0.2.v20130417.jar:vendor/main/joda-time-1.6.2.jar:vendor/main/slf4j-api-1.7.12.jar:vendor/main/slf4j-simple-1.7.12.jar:vendor/main/sqljdbc4.jar App
