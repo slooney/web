@@ -12,7 +12,7 @@
     <title>Surpresa!</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -29,6 +29,18 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript">
+     function prepare_link() {
+          var url_param = document.getElementById('code');
+          var target_link = document.getElementById('button');
+
+          if ( ! url_param.value ) {
+               return false;  
+          }
+
+          target_link.href = target_link.href + '/' + escape(url_param.value);
+     }
+	</script>
   </head>
 
   <body>
@@ -42,14 +54,12 @@
           <div class="inner cover">
             <h1>Olá! Temos uma surpresa para ti!</h1>
 			<p class="lead">Insere o código que recebeste por SMS na caixa abaixo e valida no botão.</p>
-			<p class="lead">
-				<form class="navbar-form" role="search">
+				<form class="navbar-form">
 					<div class="form-group">
-						<input type="text" class="form-control" name="code" placeholder="Código...">
+						<input type="text" class="form-control" id="code" name="code" placeholder="Código...">
 					</div>
-					<button type="submit" class="btn btn-info">Validar</button>
+					<a href="/" id="button" class="btn btn-info" role="button" onclick="prepare_link();">Validar</a>
 				</form>
-			</p>
 			<!-- <p><a class="btn btn-lg btn-info" href="#" type="submit">Validar</a></p> -->
           </div>
 
