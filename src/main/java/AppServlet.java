@@ -42,12 +42,10 @@ public class AppServlet extends HttpServlet{
 //        if(!method.equals("GET"))
 //            new HttpResponse(HttpStatusCode.MethodNotAllowed);
         if (reqURI.getPath().equals("/")){
-            new ElementController().requestHandle(req, resp, repo);
+            new ElementController().requestHandle(req, resp, null);
         }
-        if(reqURI.getPath().contains("css")){
-            resp.setContentType("text/html;charset=UTF-8");
-            PrintWriter out = resp.getWriter();
-            out.println(req.getContextPath() + "/cover.css");
+        else{
+            new ElementController().requestHandle(req, resp, repo.getByCode(segs[1]));
         }
     }
 }

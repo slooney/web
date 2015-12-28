@@ -2,14 +2,8 @@ package element;
 
 public class ElemView {
 
-    public String toString(){
-        return output;
-    }
-
-    public static final String output = formatOutput();
-
-    private static String formatOutput () {
-        return
+    public static String formatOutput (Element e) {
+        return String.format(
                 "<!DOCTYPE html>\n" +
                         "<html lang=\"PT-pt\">\n" +
                         "  <head>\n" +
@@ -52,8 +46,8 @@ public class ElemView {
                         "        <div class=\"cover-container\">\n" +
                         "\n" +
                         "          <div class=\"inner cover\">\n" +
-                        "            <h1 class=\"cover-heading\">Feliz Natal!</h1>\n" +
-                        "            <p class=\"lead\">Ol&aacute; tio(a) [Name]! Neste Natal h&aacute; mais um motivo para sorrir! Aqui est&aacute; a minha primeira fotografia!</p>\n" +
+                        "            <h1 class=\"cover-heading\">Boas Festas!</h1>\n" +
+                        "            <p class=\"lead\">Ol&aacute; ti%s %s! H&aacute; mais um motivo para sorrir! Aqui est&aacute; a minha primeira fotografia!</p>\n" +
                         "\t\t\t<img src=\"https://cld.pt/dl/download/bc11530d-6771-4f74-91be-d3214c6ee90d/eco.jpg\" class=\"img-thumbnail\" alt=\"A minha primeira fotografia\">\n" +
                         "          </div>\n" +
                         "\n" +
@@ -78,7 +72,7 @@ public class ElemView {
                         "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
                         "    <script src=\"https://cld.pt/dl/download/345f6262-5482-42e6-90af-c358125ddeb6/ie10-viewport-bug-workaround.js\"></script>\n" +
                         "  </body>\n" +
-                        "</html>\n";
+                        "</html>\n", e.getGender() ? "o" : "a", e.getName());
     }
 
 }
