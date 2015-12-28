@@ -19,22 +19,22 @@ public class ElemViewIndex{
                 "    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->\n" +
                 "    <meta name=\"description\" content=\"\">\n" +
                 "    <meta name=\"author\" content=\"\">\n" +
-                "    <link rel=\"icon\" href=\"favicon.ico\">\n" +
+                "    <link rel=\"icon\" href=\"./favicon.ico\">\n" +
                 "\n" +
                 "    <title>Surpresa!</title>\n" +
                 "\n" +
                 "    <!-- Bootstrap core CSS -->\n" +
-                "    <link href=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"./bin/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                "    <link href=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"./bin/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- Custom styles for this template -->\n" +
-                "    <link href=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/cover.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"./bin/css/cover.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->\n" +
-                "    <!--[if lt IE 9]><script src=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
-                "    <script src=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/js/ie-emulation-modes-warning.js\"></script>\n" +
+                "    <!--[if lt IE 9]><script src=\"./bin/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
+                "    <script src=\"./bin/js/ie-emulation-modes-warning.js\"></script>\n" +
                 "\n" +
                 "    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n" +
                 "    <!--[if lt IE 9]>\n" +
@@ -88,7 +88,7 @@ public class ElemViewIndex{
                 "    </div>\n" +
                 "\n" +
                 "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                "    <script src=\"https://murmuring-sands-7772.herokuapp.com/src/main/html/assets/js/ie10-viewport-bug-workaround.js\"></script>\n" +
+                "    <script src=\"./bin/js/ie10-viewport-bug-workaround.js\"></script>\n" +
                 "  </body>\n" +
                 "</html>\n";
     }
