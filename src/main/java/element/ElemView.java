@@ -24,17 +24,17 @@ public class ElemView {
                         "    <title>Surpresa!</title>\n" +
                         "\n" +
                         "    <!-- Bootstrap core CSS -->\n" +
-                        "    <link href=\"./bin/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
+                        "    <link href=\"./src/main/html/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
                         "\n" +
                         "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                        "    <link href=\"./bin/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
+                        "    <link href=\"./src/main/html/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
                         "\n" +
                         "    <!-- Custom styles for this template -->\n" +
-                        "    <link href=\"./bin/css/cover.css\" rel=\"stylesheet\">\n" +
+                        "    <link href=\"./src/main/html/css/cover.css\" rel=\"stylesheet\">\n" +
                         "\n" +
                         "    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->\n" +
-                        "    <!--[if lt IE 9]><script src=\"./bin/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
-                        "    <script src=\"./bin/js/ie-emulation-modes-warning.js\"></script>\n" +
+                        "    <!--[if lt IE 9]><script src=\"./src/main/html/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
+                        "    <script src=\"./src/main/html/js/ie-emulation-modes-warning.js\"></script>\n" +
                         "\n" +
                         "    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n" +
                         "    <!--[if lt IE 9]>\n" +
@@ -54,7 +54,7 @@ public class ElemView {
                         "          <div class=\"inner cover\">\n" +
                         "            <h1 class=\"cover-heading\">Feliz Natal!</h1>\n" +
                         "            <p class=\"lead\">Ol&aacute; tio(a) [Name]! Neste Natal h&aacute; mais um motivo para sorrir! Aqui est&aacute; a minha primeira fotografia!</p>\n" +
-                        "\t\t\t<img src=\"./bin/images/eco.jpg\" class=\"img-thumbnail\" alt=\"A minha primeira fotografia\">\n" +
+                        "\t\t\t<img src=\"./src/main/html/images/eco.jpg\" class=\"img-thumbnail\" alt=\"A minha primeira fotografia\">\n" +
                         "          </div>\n" +
                         "\n" +
                         "          <div class=\"mastfoot\">\n" +
@@ -73,10 +73,10 @@ public class ElemView {
                         "    ================================================== -->\n" +
                         "    <!-- Placed at the end of the document so the pages load faster -->\n" +
                         "    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\n" +
-                        "    <script>window.jQuery || document.write('<script src=\"./bin/js/vendor/jquery.min.js\"><\\/script>')</script>\n" +
-                        "    <script src=\"./bin/js/bootstrap.min.js\"></script>\n" +
+                        "    <script>window.jQuery || document.write('<script src=\"./src/main/html/js/vendor/jquery.min.js\"><\\/script>')</script>\n" +
+                        "    <script src=\"./src/main/html/js/bootstrap.min.js\"></script>\n" +
                         "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                        "    <script src=\"./bin/js/ie10-viewport-bug-workaround.js\"></script>\n" +
+                        "    <script src=\"./src/main/html/js/ie10-viewport-bug-workaround.js\"></script>\n" +
                         "  </body>\n" +
                         "</html>\n";
     }
