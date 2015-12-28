@@ -3,6 +3,7 @@ import element.ElementRepository;
 import http.HttpResponse;
 import http.HttpStatusCode;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 import javax.servlet.ServletException;
@@ -40,8 +41,13 @@ public class AppServlet extends HttpServlet{
 //        String method = req.getMethod();
 //        if(!method.equals("GET"))
 //            new HttpResponse(HttpStatusCode.MethodNotAllowed);
-        if (segs.length == 2 || reqURI.getPath().equals("/")){
+        if (reqURI.getPath().equals("/")){
             new ElementController().requestHandle(req, resp, repo);
+        }
+        if(reqURI.getPath().contains("css")){
+            resp.setContentType("text/html;charset=UTF-8");
+            PrintWriter out = resp.getWriter();
+            out.println(req.getContextPath() + "/cover.css");
         }
     }
 }

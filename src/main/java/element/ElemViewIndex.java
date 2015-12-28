@@ -23,18 +23,18 @@ public class ElemViewIndex{
                 "\n" +
                 "    <title>Surpresa!</title>\n" +
                 "\n" +
+                "    <!-- Custom styles for this template -->\n" +
+                "    <link href=\"https://cld.pt/dl/download/7080ba73-0765-468f-a719-4e601b8da943/cover.css\" rel=\"stylesheet\">\n" +
+                "\n" +
                 "    <!-- Bootstrap core CSS -->\n" +
-                "    <link href=\"./src/main/html/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"https://cld.pt/dl/download/660239f5-1f68-4346-828a-dc4096974a83/bootstrap.min.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                "    <link href=\"./src/main/html/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
-                "\n" +
-                "    <!-- Custom styles for this template -->\n" +
-                "    <link href=\"./src/main/html/css/cover.css\" rel=\"stylesheet\">\n" +
+                "    <link href=\"https://cld.pt/dl/download/e30a5062-6e68-4a77-a5f4-b6f44972038f/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
                 "\n" +
                 "    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->\n" +
-                "    <!--[if lt IE 9]><script src=\"./src/main/html/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
-                "    <script src=\"./src/main/html/js/ie-emulation-modes-warning.js\"></script>\n" +
+                "    <!--[if lt IE 9]><script src=\"https://cld.pt/dl/download/ac4ccb5f-6d6e-48fc-b68c-083293bc517e/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
+                "    <script src=\"https://cld.pt/dl/download/5c2de067-72f1-44a3-847d-63eaa71b8a5b/ie-emulation-modes-warning.js\"></script>\n" +
                 "\n" +
                 "    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n" +
                 "    <!--[if lt IE 9]>\n" +
@@ -88,7 +88,7 @@ public class ElemViewIndex{
                 "    </div>\n" +
                 "\n" +
                 "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                "    <script src=\"./src/main/html/js/ie10-viewport-bug-workaround.js\"></script>\n" +
+                "    <script src=\"https://cld.pt/dl/download/345f6262-5482-42e6-90af-c358125ddeb6/ie10-viewport-bug-workaround.js\"></script>\n" +
                 "  </body>\n" +
                 "</html>\n";
     }

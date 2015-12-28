@@ -23,18 +23,18 @@ public class ElemView {
                         "\n" +
                         "    <title>Surpresa!</title>\n" +
                         "\n" +
+                        "    <!-- Custom styles for this template -->\n" +
+                        "    <link href=\"https://cld.pt/dl/download/7080ba73-0765-468f-a719-4e601b8da943/cover.css\" rel=\"stylesheet\">\n" +
+                        "\n" +
                         "    <!-- Bootstrap core CSS -->\n" +
-                        "    <link href=\"./src/main/html/css/bootstrap.min.css\" rel=\"stylesheet\">\n" +
+                        "    <link href=\"https://cld.pt/dl/download/660239f5-1f68-4346-828a-dc4096974a83/bootstrap.min.css\" rel=\"stylesheet\">\n" +
                         "\n" +
                         "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                        "    <link href=\"./src/main/html/css/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
-                        "\n" +
-                        "    <!-- Custom styles for this template -->\n" +
-                        "    <link href=\"./src/main/html/css/cover.css\" rel=\"stylesheet\">\n" +
+                        "    <link href=\"https://cld.pt/dl/download/e30a5062-6e68-4a77-a5f4-b6f44972038f/ie10-viewport-bug-workaround.css\" rel=\"stylesheet\">\n" +
                         "\n" +
                         "    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->\n" +
-                        "    <!--[if lt IE 9]><script src=\"./src/main/html/js/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
-                        "    <script src=\"./src/main/html/js/ie-emulation-modes-warning.js\"></script>\n" +
+                        "    <!--[if lt IE 9]><script src=\"https://cld.pt/dl/download/ac4ccb5f-6d6e-48fc-b68c-083293bc517e/ie8-responsive-file-warning.js\"></script><![endif]-->\n" +
+                        "    <script src=\"https://cld.pt/dl/download/5c2de067-72f1-44a3-847d-63eaa71b8a5b/ie-emulation-modes-warning.js\"></script>\n" +
                         "\n" +
                         "    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n" +
                         "    <!--[if lt IE 9]>\n" +
@@ -54,7 +54,7 @@ public class ElemView {
                         "          <div class=\"inner cover\">\n" +
                         "            <h1 class=\"cover-heading\">Feliz Natal!</h1>\n" +
                         "            <p class=\"lead\">Ol&aacute; tio(a) [Name]! Neste Natal h&aacute; mais um motivo para sorrir! Aqui est&aacute; a minha primeira fotografia!</p>\n" +
-                        "\t\t\t<img src=\"./src/main/html/images/eco.jpg\" class=\"img-thumbnail\" alt=\"A minha primeira fotografia\">\n" +
+                        "\t\t\t<img src=\"https://cld.pt/dl/download/bc11530d-6771-4f74-91be-d3214c6ee90d/eco.jpg\" class=\"img-thumbnail\" alt=\"A minha primeira fotografia\">\n" +
                         "          </div>\n" +
                         "\n" +
                         "          <div class=\"mastfoot\">\n" +
@@ -73,10 +73,10 @@ public class ElemView {
                         "    ================================================== -->\n" +
                         "    <!-- Placed at the end of the document so the pages load faster -->\n" +
                         "    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>\n" +
-                        "    <script>window.jQuery || document.write('<script src=\"./src/main/html/js/vendor/jquery.min.js\"><\\/script>')</script>\n" +
-                        "    <script src=\"./src/main/html/js/bootstrap.min.js\"></script>\n" +
+                        "    <script>window.jQuery || document.write('<script src=\"https://cld.pt/dl/download/a78c69df-8ab1-470c-8700-97859fcc65a8/jquery.min.js\"><\\/script>')</script>\n" +
+                        "    <script src=\"https://cld.pt/dl/download/a6c868ae-664b-4e1b-a25a-8a1f648f915a/bootstrap.min.js\"></script>\n" +
                         "    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->\n" +
-                        "    <script src=\"./src/main/html/js/ie10-viewport-bug-workaround.js\"></script>\n" +
+                        "    <script src=\"https://cld.pt/dl/download/345f6262-5482-42e6-90af-c358125ddeb6/ie10-viewport-bug-workaround.js\"></script>\n" +
                         "  </body>\n" +
                         "</html>\n";
     }
