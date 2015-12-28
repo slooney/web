@@ -13,7 +13,7 @@ public class ElemViewIndex{
                         "    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->\n" +
                         "    <meta name=\"description\" content=\"\">\n" +
                         "    <meta name=\"author\" content=\"\">\n" +
-                        "    <link rel=\"icon\" href=\"./favicon.ico\">\n" +
+                        "    <link rel=\"icon\" href=\"https://cld.pt/dl/download/0ac054a0-d8d6-423a-a074-b419354a2ca3/favicon.ico\">\n" +
                         "\n" +
                         "    <title>Surpresa!</title>\n" +
                         "\n" +
