@@ -30,7 +30,7 @@ public class App {
         _repo.add(new Element("di9f9fy3", "C&aacute;tia", false));
         _repo.add(new Element("whnh6pvt", "C&aacute;tia", false));
         _repo.add(new Element("m51km6kw", "Rita", false));
-        _repo.add(new Element("dtbwjdt4", "Ritinha", false));
+        _repo.add(new Element("dtbwjdt4", "Rita", false));
         _repo.add(new Element("xiivsq18", "S&iacute;lvia", false));
         _repo.add(new Element("8ci55izr", "Jorge", true));
         _repo.add(new Element("n2giy7tq", "Filipa", false));
