@@ -10,17 +10,17 @@ import java.net.URISyntaxException;
 
 public class ElementController {
 
-    public void requestHandle(HttpServletRequest req, HttpServletResponse resp, ElementRepository repo) throws IOException, URISyntaxException {
+    public void requestHandle(HttpServletRequest req, HttpServletResponse resp, Element e) throws IOException, URISyntaxException {
         URI reqUri = new URI(req.getRequestURI());
         String output = "";
         String h = req.getHeader("accept").split(",")[0];
         String headers = (h.equals("*/*"))? null : String.format("accept:%s", h);
 
         if(reqUri.getPath().equals("/")){
-            output = ElemViewIndex.output;
+            output = ElemViewIndex.formatOutput();
         }
-        else{
-            output = ElemView.output;
+        else if(e != null){
+            output = ElemView.formatOutput(e);
         }
 
         writeResponse(resp, headers, output, HttpStatusCode.Ok.valueOf());
