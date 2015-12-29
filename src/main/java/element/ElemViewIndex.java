@@ -35,8 +35,8 @@ public class ElemViewIndex{
                         "      <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n" +
                         "      <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n" +
                         "    <![endif]-->\n" +
-                        "<script type=\"text/javascript\">\n" +
-                        "     function prepare_link() {\n" +
+                        "    <script type=\"text/javascript\">\n" +
+                        "       function prepare_link() {\n" +
                         "          var url_param = document.getElementById('code');\n" +
                         "          var target_link = document.getElementById('button');\n" +
                         "\n" +
@@ -45,8 +45,19 @@ public class ElemViewIndex{
                         "          }\n" +
                         "\n" +
                         "          target_link.href = target_link.href + escape(url_param.value);\n" +
-                        "     }\n" +
-                        "\t</script>" +
+                        "       }\n" +
+                        "\t   </script>" +
+                        "     <script type=\"text/javascript\"> \n" +
+                        "\n" +
+                        "       function stopRKey(evt) { \n" +
+                        "               var evt = (evt) ? evt : ((event) ? event : null); \n" +
+                        "               var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); \n" +
+                        "               if ((evt.keyCode == 13) && (node.type==\"text\"))  {return false;} \n" +
+                        "       } \n" +
+                        "\n" +
+                        "       document.onkeypress = stopRKey; \n" +
+                        "\n" +
+                        "     </script>" +
                         "  </head>\n" +
                         "\n" +
                         "  <body>\n" +
