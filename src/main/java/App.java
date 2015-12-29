@@ -63,9 +63,9 @@ public class App {
         _repo.add(new Element("69i7m954", "Caty", false));
         _repo.add(new Element("2wpmqcsc", "Miguel", true));
         _repo.add(new Element("eji85owt", "Diana", false));
-        _repo.add(new Element("7r4tt5fe", "Ru", false));
-        _repo.add(new Element("kxujyo72", "Vitinho", true));
-        _repo.add(new Element("5jwzbhwk", "Belinha", false));
+        _repo.add(new Element("gpz3m52q", "Ru", false));
+        _repo.add(new Element("nv2lnvoa", "Vitinho", true));
+        _repo.add(new Element("z4103cju", "Belinha", false));
 
         Server server = new Server(Integer.valueOf(System.getenv("PORT")));
         //Server server = new Server(LISTEN_PORT);
